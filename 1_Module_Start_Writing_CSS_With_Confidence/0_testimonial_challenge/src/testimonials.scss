@@ -1,0 +1,32 @@
+.testimonials-heading {
+  text-align: center;
+  color: var(--testimonials_heading_color);
+  font-family: var(--cursive_font_family);
+}
+
+.testimonials {
+  list-style: none;
+
+  &__card {
+    background-color: var(--card_background_color);
+    border-radius: var(--card_border_radius);
+    font-family: var(--sans_serif_font_family);
+    font-size: 17px;
+
+    &__copy {
+      color: var(--card_copy_color);
+    }
+
+    &__name {
+      text-transform: uppercase;
+      color: var(--testimonials_heading_color);
+      font-family: var(--cursive_font_family);
+      font-size: inherit;
+    }
+
+    &__job-title {
+      color: var(--card_job_title_color);
+      font-size: 14px;
+    }
+  }
+}

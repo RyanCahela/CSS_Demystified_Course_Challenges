@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.scss" />
+    <title>0_testimonial_challenge</title>
+  </head>
+  <body>
+    <label for="theme-toggle" class="theme-checkbox-label">Dark Theme</label>
+    <input type="checkbox" id="theme-toggle" name="theme-toggle" />
+    <div class="container">
+      <h1 class="testimonials-heading">Testimonials</h1>
+      <ul class="testimonials">
+        <li class="testimonials__card">
+          <img
+            class="testimonials__card__image"
+            src="https://picsum.photos/150/150"
+          />
+          <p class="testimonials__card__copy">
+            Cras
+            <span class="bold-text"
+              >a magna ut lectus vestibulum ullamcorper. Etiam laoreet semper
+              velit</span
+            >, vel fringilla tortor pharetra nec.
+          </p>
+          <h2 class="testimonials__card__name">John Smith</h2>
+          <span class="testimonials__card__job-title">front-end dev</span>
+        </li>
+        <li class="testimonials__card">
+          <img
+            class="testimonials__card__image"
+            src="https://picsum.photos/150/150"
+          />
+          <p class="testimonials__card__copy">
+            Cras a magna ut lectus vestibulum ullamcorper. Etiam
+            <span class="bold-text">laoreet semper velit, vel fringilla</span>
+            tortor pharetra nec.
+          </p>
+          <h2 class="testimonials__card__name">Jane Smith</h2>
+          <span class="testimonials__card__job-title">front-end dev</span>
+        </li>
+        <li class="testimonials__card">
+          <img
+            class="testimonials__card__image"
+            src="https://picsum.photos/150/150"
+          />
+          <p class="testimonials__card__copy">
+            Cras a magna ut lectus vestibulum ullamcorper. Etiam laoreet semper
+            velit, vel fringilla tortor pharetra nec.
+          </p>
+          <h2 class="testimonials__card__name">Ron Smith</h2>
+          <span class="testimonials__card__job-title">front-end dev</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const checkbox = document.getElementById("theme-toggle");
+      checkbox.addEventListener("click", (e) => {
+        document.body.classList.toggle("dark-theme");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+:root {
+  /**************
+  COLORS
+  **************/
+  --orange: hsla(9, 76%, 48%, 1);
+  --light_grey: hsla(0, 0%, 93%, 1);
+  --grey: hsla(0, 0%, 48%, 1);
+  --dark_grey: hsla(0, 0%, 21%, 1);
+
+  //theme checkbox
+  --theme_checkbox_label_color: var(--dark_grey);
+
+  //headings
+  --testimonials_heading_color: var(--orange);
+
+  //card
+  --card_background_color: var(--light_grey);
+  --card_job_title_color: var(--grey);
+  --card_copy_color: var(--dark_grey);
+  --card_border_radius: 24px;
+
+  //fonts
+  --cursive_font_family: 'Luckiest Guy', cursive;
+  --sans_serif_font_family: 'PT Sans', sans-serif;
+
+  --regular_font_weight: 400;
+  --bold_font_weight: 700;
+}
