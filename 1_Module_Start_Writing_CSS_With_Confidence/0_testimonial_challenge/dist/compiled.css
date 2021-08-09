@@ -1,0 +1,149 @@
+:root {
+  /**************
+  COLORS
+  **************/
+  --orange: hsla(9, 76%, 48%, 1);
+  --light_grey: hsla(0, 0%, 93%, 1);
+  --grey: hsla(0, 0%, 48%, 1);
+  --dark_grey: hsla(0, 0%, 21%, 1);
+  --theme_radio_label_color: var(--dark_grey);
+  --testimonials_heading_color: var(--orange);
+  --card_background_color: var(--light_grey);
+  --card_job_title_color: var(--grey);
+  --card_copy_color: var(--dark_grey);
+  --card_border_radius: 24px;
+  --cursive_font_family: "Luckiest Guy", cursive;
+  --sans_serif_font_family: "PT Sans", sans-serif;
+  --regular_font_weight: 400;
+  --bold_font_weight: 700;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-form {
+  display: flex;
+  font-family: var(--sans_serif_font_family);
+}
+
+.theme-radio-label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.testimonials-heading {
+  text-align: var(--text-align);
+}
+
+.testimonials {
+  display: flex;
+  padding-left: 0;
+}
+.testimonials__card {
+  flex-basis: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+.testimonials__card__image {
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.testimonials__card__name {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.testimonials__card + .testimonials__card {
+  margin-left: 48px;
+}
+
+.bold-text {
+  font-weight: var(--bold_font_weight);
+}
+
+[name=theme-radio] {
+  display: none;
+}
+[name=theme-radio] + .theme-radio-label {
+  background-color: var(--theme_controls_label_background);
+  color: var(--theme_controls_label_color);
+}
+[name=theme-radio]:checked + .theme-radio-label {
+  background-color: var(--theme_controls_checked_label_background);
+  color: var(--theme_controls_checked_label_color);
+  text-decoration: underline;
+}
+
+.testimonials-heading {
+  text-align: center;
+  color: var(--testimonials_heading_color);
+  font-family: var(--cursive_font_family);
+}
+
+.testimonials {
+  list-style: none;
+}
+.testimonials__card {
+  background-color: var(--card_background_color);
+  border-radius: var(--card_border_radius);
+  font-family: var(--sans_serif_font_family);
+  font-size: 17px;
+}
+.testimonials__card__copy {
+  color: var(--card_copy_color);
+}
+.testimonials__card__name {
+  text-transform: uppercase;
+  color: var(--testimonials_heading_color);
+  font-family: var(--cursive_font_family);
+  font-size: inherit;
+}
+.testimonials__card__job-title {
+  color: var(--card_job_title_color);
+  font-size: 14px;
+}
+
+.dark-theme {
+  background-color: #212121;
+  --card_background_color: var(--dark_grey);
+  --card_copy_color: var(--light_grey);
+  --card_job_title_color: var(--light_grey);
+  --theme_controls_checked_label_background: var(--light_grey);
+  --theme_controls_label_background: var(--dark_grey);
+  --theme_controls_label_color: var(--light_grey);
+  --theme_controls_ckecked_label_color: var(--dark_grey);
+}
+
+.halo-theme {
+  background-color: #838b64;
+  --theme_radio_label_color: var(--light_grey);
+  --card_background_color: #6c8d71;
+  --card_copy_color: var(--light_grey);
+  --card_job_title_color: var(--light_grey);
+  --testimonials_heading_color: #99d21b;
+  --theme_controls_label_background: #879250;
+  --theme_controls_checked_label_background: #8ea72f;
+}
+
+.merica-theme {
+  background-color: #0660a9;
+  --card_backtround_color: #ffffff;
+  --card_copy_color: var(--dark_grey);
+  --card_job_title_color: var(--light-grey);
+  --testimonials_heading_color: #ed1c23;
+  --theme_controls_label_color: #ffffff;
+  --theme_controls_label_background: #0d76bd;
+  --theme_controls_checked_label_color: #ffffff;
+}
+
+/*# sourceMappingURL=compiled.css.map */

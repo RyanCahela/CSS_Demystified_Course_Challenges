@@ -4,6 +4,18 @@
   margin-right: auto;
 }
 
+.theme-form {
+  display: flex;
+  font-family: var(--sans_serif_font_family);
+}
+
+.theme-radio-label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .testimonials-heading {
   text-align: var(--text-align);
 }

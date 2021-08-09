@@ -1,0 +1,14 @@
+[name="theme-radio"] {
+  display: none;
+
+  & + .theme-radio-label {
+    background-color: var(--theme_controls_label_background);
+    color: var(--theme_controls_label_color);
+  }
+
+  &:checked + .theme-radio-label {
+    background-color: var(--theme_controls_checked_label_background);
+    color: var(--theme_controls_checked_label_color);
+    text-decoration: underline;
+  }
+}

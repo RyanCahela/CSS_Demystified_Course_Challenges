@@ -1,10 +1,10 @@
 .dark-theme {
   background-color: #212121;
-  --theme_checkbox_label_color: var(--light_grey);
   --card_background_color: var(--dark_grey);
   --card_copy_color: var(--light_grey);
   --card_job_title_color: var(--light_grey);
-  & .theme-checkbox-label {
-    color: var(--theme_checkbox_label_color);
-  }
+  --theme_controls_checked_label_background: var(--light_grey);
+  --theme_controls_label_background: var(--dark_grey);
+  --theme_controls_label_color: var(--light_grey);
+  --theme_controls_ckecked_label_color: var(--dark_grey);
 }
